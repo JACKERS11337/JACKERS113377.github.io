@@ -1,0 +1,38 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.h4 {
+  font-size: 18px;
+}
+.h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 2.3rem;
+  margin-top: 1rem;
+}
+.h1 span {
+  color: red;
+}
+
+.p {
+  color: #706f7b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

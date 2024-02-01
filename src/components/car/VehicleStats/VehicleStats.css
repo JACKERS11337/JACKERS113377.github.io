@@ -1,0 +1,36 @@
+.car__table {
+  display: grid;
+
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #111;
+}
+
+.car__price {
+  display: grid;
+  grid-template-columns: 280px;
+  justify-items: center;
+  border-bottom: 2px solid #111;
+  background-color: red;
+  color: #fff;
+  font-size: 25px;
+}
+.car__info {
+  display: grid;
+  font-size: 16px;
+  grid-template-columns: 280px;
+  grid-template-rows: auto;
+}
+.car__list {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  grid-template-rows: auto;
+
+  padding: 10px 7px;
+  text-align: center;
+}
+.car__list span:first-child {
+  border-right: 2px solid #111;
+}
+.car__list:not(:last-child) {
+  border-bottom: 2px solid #111;
+}
