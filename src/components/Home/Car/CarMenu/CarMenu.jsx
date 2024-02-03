@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Button from "../../UI/buttons/Button";
+import Button from "../../../UI/buttons/Button";
 import VehicleModels from "../VehicleModels/VehicleModels";
-import { cars as adCars } from "../car-info";
+import { cars as adCars } from "../Car-info";
 import VehicleStats from "../VehicleStats/VehicleStats";
 import styled from "./CarMenu.module.css";
 import CarTittle from "../CarTittle/CarTittle";

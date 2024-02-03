@@ -1,5 +1,5 @@
 import HeaderMenu from "./HeaderMenu/HeaderMenu";
-import PlanYou from "./PlanYou/PlanYou";
+import PlanYou from "../PlanYou/PlanYou";
 
 const Header = () => {
   return (
