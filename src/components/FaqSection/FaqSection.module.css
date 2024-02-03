@@ -73,7 +73,7 @@
 }
 
 .faq_box__question.active_question {
-  background-color: red;
+  background-color: #ff4d30;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   color: #fff;
 }
