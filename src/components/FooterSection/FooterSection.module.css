@@ -1,0 +1,109 @@
+.footer {
+  background-color: #2d2d2d;
+}
+.container {
+  max-width: 1300px;
+  margin: 100px auto 0 auto;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.footer_content {
+  display: grid;
+  grid-template-columns: 27fr 21fr 21fr 27fr;
+  justify-content: center;
+  text-align: left;
+  gap: 100px;
+  padding: 20px 0;
+}
+.footer_content__1 {
+  list-style: none;
+}
+.footer_content__1 li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer_content__1 li a:hover {
+  color: #ff4d30;
+}
+.footer_content__1 span {
+  font-weight: 700;
+}
+.footer_content__1 li:first-child {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.footer_content__1 li:nth-child(2) {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.footer_content__1 li:nth-child(3) {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.footer_content__1 li:last-child {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer_content__2 {
+  list-style: none;
+}
+.footer_content__2 li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer_content__2 li a:hover {
+  color: #ff4d30;
+}
+
+.footer_content__2 li:first-child {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.footer_content__2 li:nth-child(2) {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.footer_content__2 li:nth-child(3) {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.footer_content__2 li:last-child {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.footer_content__2 input {
+  background-color: #d4d4d4;
+  border-color: transparent;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 1rem;
+  outline: none;
+  padding: 10px 110px 10px 10px;
+  text-align: left;
+}
+
+.submit_email {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 13px 60px;
+  text-decoration: none;
+  width: 100%;
+  transition: all 0.3s;
+}
