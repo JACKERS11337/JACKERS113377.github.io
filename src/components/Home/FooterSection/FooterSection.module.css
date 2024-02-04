@@ -1,11 +1,11 @@
 .footer {
-  background-color: #2d2d2d;
+  background-color: #fff;
 }
 .container {
   max-width: 1300px;
   margin: 100px auto 0 auto;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #111;
 }
 .footer_content {
   display: grid;
@@ -20,7 +20,7 @@
 }
 .footer_content__1 li a {
   text-decoration: none;
-  color: #fff;
+  color: #111;
   transition: all 0.3s ease;
 }
 .footer_content__1 li a:hover {
@@ -34,7 +34,7 @@
   margin-bottom: 1rem;
 }
 .footer_content__1 li:nth-child(2) {
-  color: #fff;
+  color: #706f7b;
   font-size: 16px;
   line-height: 1.7;
   margin-bottom: 1rem;
@@ -55,7 +55,7 @@
 }
 .footer_content__2 li a {
   text-decoration: none;
-  color: #fff;
+  color: #111;
   transition: all 0.3s ease;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .footer_content__2 input {
-  background-color: #d4d4d4;
+  background-color: #e0e0e0;
   border-color: transparent;
   border-width: 1px;
   font-size: 14px;

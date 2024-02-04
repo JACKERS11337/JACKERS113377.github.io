@@ -6,7 +6,7 @@ const HeaderMenu = () => {
   return (
     <>
       <div className={style.content}>
-        <a href="#" className={style.logo__content}>
+        <Link to="/" className={style.logo__content}>
           <div className={style.image__logo}>
             <img className={style.logo} src={logo} alt="logo" />
           </div>
@@ -14,7 +14,7 @@ const HeaderMenu = () => {
             <span>CAR</span>
             <p className={style.p}>Rental</p>
           </div>
-        </a>
+        </Link>
 
         <nav className={style.nav}>
           <ul className={style.ul}>
@@ -25,7 +25,7 @@ const HeaderMenu = () => {
               <Link to="/About">About</Link>
             </li>
             <li>
-              <Link to="/Vehicle Models">Vehicle Models</Link>
+              <Link to="/Cars models">Cars Models</Link>
             </li>
             <li>
               <Link to="/Contact">Contact</Link>
