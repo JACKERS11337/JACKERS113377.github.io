@@ -1,6 +1,7 @@
 .container {
-  margin: 150px 0 250px 0;
+  margin: 150px auto 250px auto;
   font-family: "Poppins", sans-serif;
+  max-width: 1300px;
 }
 
 .plan-container {

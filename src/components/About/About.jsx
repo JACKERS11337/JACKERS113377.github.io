@@ -1,4 +1,4 @@
-import HeaderMenu from "../Home/Header/HeaderMenu/HeaderMenu";
+import HeaderMenu from "../Header/HeaderMenu/HeaderMenu";
 
 const About = () => {
   return (

@@ -1,5 +1,6 @@
 import logo from "/logo.png";
 import style from "./HeaderMenu.module.css";
+import { Link } from "react-router-dom";
 
 const HeaderMenu = () => {
   return (
@@ -18,16 +19,16 @@ const HeaderMenu = () => {
         <nav className={style.nav}>
           <ul className={style.ul}>
             <li>
-              <a href="#">Home</a>
+              <Link to="/Home">Home</Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link to="/About">About</Link>
             </li>
             <li>
-              <a href="#">Vehicle Models</a>
+              <Link to="/Vehicle Models">Vehicle Models</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="/Contact">Contact</Link>
             </li>
           </ul>
         </nav>

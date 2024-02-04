@@ -1,8 +1,9 @@
 .content {
   display: flex;
   justify-content: space-between;
-  margin: 200px 0;
+  margin: 200px auto;
   font-family: "Poppins", sans-serif;
+  max-width: 1300px;
 }
 
 .info {
