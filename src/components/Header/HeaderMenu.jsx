@@ -22,13 +22,13 @@ const HeaderMenu = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/About">About</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/Cars models">Cars Models</Link>
+              <Link to="/models">Cars Models</Link>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>

@@ -1,4 +1,4 @@
-import HeaderMenu from "../Header/HeaderMenu/HeaderMenu";
+import HeaderMenu from "../Header/HeaderMenu";
 
 const CarsModels = () => {
   return (

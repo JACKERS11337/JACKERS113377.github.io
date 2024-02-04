@@ -1,4 +1,4 @@
-import HeaderMenu from "../Header/HeaderMenu/HeaderMenu";
+import HeaderMenu from "../Header/HeaderMenu";
 import EasyRental from "../Home/EasyRental/EasyRental";
 import FooterSection from "../Home/FooterSection/FooterSection";
 import AboutBannerSection from "./AboutBannerSection/AboutBannerSection";

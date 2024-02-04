@@ -6,7 +6,7 @@ import ChooseSection from "./ChooseSection/ChooseSection";
 import FaqSection from "./FaqSection/FaqSection";
 import FooterSection from "./FooterSection/FooterSection";
 import PlanYou from "./PlanYou/PlanYou";
-import HeaderMenu from "../Header/HeaderMenu/HeaderMenu";
+import HeaderMenu from "../Header/HeaderMenu";
 
 const Home = () => {
   return (
