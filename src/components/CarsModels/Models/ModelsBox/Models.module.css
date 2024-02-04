@@ -1,0 +1,11 @@
+.container {
+  max-width: 1300px;
+  margin: 100px auto;
+}
+
+.models_div__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}

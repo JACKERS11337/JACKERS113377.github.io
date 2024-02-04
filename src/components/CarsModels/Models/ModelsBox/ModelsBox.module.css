@@ -1,0 +1,57 @@
+.models_div__box__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #d5d5d5;
+  border-radius: 0.3rem;
+  font-family: "Rubik", sans-serif;
+}
+.models_div__box__img img {
+  height: 15rem;
+  width: 100%;
+  padding: 10px;
+}
+
+.models_div__box__info {
+  color: #010103;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+.models_div__box__info__name_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.models_div__box__info__name_price__name p {
+  font-size: 27px;
+  font-weight: 700;
+}
+.models_div__box__info__name_price__price h4 {
+  font-size: 27px;
+}
+.models_div__box__info__name_price__price p {
+  font-size: 20px;
+}
+.models_div__box__info__name_price__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-row-gap: 2rem;
+  grid-column-gap: 7rem;
+  margin: 2rem auto 0 auto;
+}
+.models_div__box__info__name_price__details span {
+  color: #777;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.span_right {
+  color: #777;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: right;
+}
