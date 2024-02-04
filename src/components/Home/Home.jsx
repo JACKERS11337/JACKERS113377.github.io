@@ -11,17 +11,14 @@ import HeaderMenu from "../Header/HeaderMenu/HeaderMenu";
 const Home = () => {
   return (
     <>
-      <>
-        <HeaderMenu />
-        <PlanYou />
-        <EasyRental />
-        <CarMenu />
-
-        <Banner />
-        <ChooseSection />
-        <FaqSection />
-        <FooterSection />
-      </>
+      <HeaderMenu />
+      <PlanYou />
+      <EasyRental />
+      <CarMenu />
+      <Banner />
+      <ChooseSection />
+      <FaqSection />
+      <FooterSection />
     </>
   );
 };
