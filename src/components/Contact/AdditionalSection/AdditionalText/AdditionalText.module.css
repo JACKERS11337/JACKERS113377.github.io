@@ -1,0 +1,33 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  max-width: 28rem;
+}
+.text h3 {
+  font-size: 45px;
+  line-height: 1.2;
+  margin-bottom: 26px;
+}
+.text p {
+  color: #706f7b;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 26px;
+}
+.text a {
+  color: #010103;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 26px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.text a svg {
+  margin-right: 10px;
+}
+
+.text a:hover {
+  color: #ff4d30;
+}

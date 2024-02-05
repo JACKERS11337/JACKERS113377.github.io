@@ -1,0 +1,44 @@
+.form {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form b {
+  color: #ff4d30;
+}
+.form label {
+  font-size: 17px;
+  font-weight: 600;
+}
+.form input {
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 17px;
+  outline: none;
+  padding: 19px 30px;
+}
+
+.form textarea {
+  background-color: #f2f2f2;
+  border: none;
+  height: 18rem;
+  margin-bottom: 1.5rem;
+  padding: 19px 30px;
+  font-size: 17px;
+}
+
+.submit_email {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 60px;
+  text-decoration: none;
+
+  margin-bottom: 2.5rem;
+}

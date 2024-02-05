@@ -1,0 +1,11 @@
+.container {
+  max-width: 1200px;
+  margin: 150px auto;
+  background-image: url(/contact-section.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
