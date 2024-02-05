@@ -5,7 +5,7 @@ import { cars } from "../../../Js/CarObj/car-info";
 const Models = () => {
   console.log();
   return (
-    <section>
+    <section className={models.section}>
       <div className={models.container}>
         <div className={models.models_div__box}>
           {cars.map((car) => (

@@ -6,7 +6,7 @@ import company from "./AboutCompanySection.module.css";
 
 const AboutCompanySection = () => {
   return (
-    <section>
+    <section className={company.section}>
       <div className={company.container}>
         <div className={company.about_company}>
           <img

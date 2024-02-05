@@ -1,7 +1,12 @@
+.section {
+  position: relative;
+  width: 100%;
+}
+
 .content {
   display: flex;
   justify-content: space-between;
-  margin: 200px auto;
+  margin: 250px auto;
   font-family: "Poppins", sans-serif;
   max-width: 1300px;
 }
@@ -12,10 +17,10 @@
 }
 
 .h4 {
-  font-size: 18px;
+  font-size: 25px;
 }
 .h1 {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 700;
   line-height: 70px;
   margin-bottom: 2.3rem;
@@ -27,8 +32,8 @@
 
 .p {
   color: #706f7b;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.5;
   margin-bottom: 4rem;
 }
 

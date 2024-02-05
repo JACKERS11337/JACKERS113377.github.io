@@ -1,6 +1,10 @@
+.section {
+  position: relative;
+  width: 100%;
+}
 .container {
   max-width: 1300px;
-  margin: 200px auto;
+  margin: 150px auto;
   font-family: "Rubik", sans-serif;
 }
 .about_company {

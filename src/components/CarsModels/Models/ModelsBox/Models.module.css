@@ -1,6 +1,10 @@
+.section {
+  position: relative;
+  width: 100%;
+}
 .container {
   max-width: 1300px;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 
 .models_div__box {

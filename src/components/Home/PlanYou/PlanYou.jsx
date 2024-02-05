@@ -3,7 +3,7 @@ import style from "./PlanYou.module.css";
 
 const PlanYou = () => {
   return (
-    <>
+    <section className={style.section}>
       <div className={style.content}>
         <div className={style.info}>
           <h4 className={style.h4}>Plan your trip now</h4>
@@ -20,7 +20,7 @@ const PlanYou = () => {
           <img className={style.images} src={car} alt="Golf 6" />
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
