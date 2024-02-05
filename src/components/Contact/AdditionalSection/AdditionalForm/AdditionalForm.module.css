@@ -22,6 +22,7 @@
 .form textarea {
   background-color: #f2f2f2;
   border: none;
+  outline: none;
   height: 18rem;
   margin-bottom: 1.5rem;
   padding: 19px 30px;
