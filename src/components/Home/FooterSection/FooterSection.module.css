@@ -26,6 +26,9 @@
 .footer_content__1 li a:hover {
   color: #ff4d30;
 }
+.footer_content__1 li a svg {
+  margin-right: 10px;
+}
 .footer_content__1 span {
   font-weight: 700;
 }
