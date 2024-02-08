@@ -7,12 +7,14 @@ import FaqSection from "./FaqSection/FaqSection";
 import FooterSection from "./FooterSection/FooterSection";
 import PlanYou from "./PlanYou/PlanYou";
 import HeaderMenu from "../Header/HeaderMenu";
+import BookCar from "./BookCar/BookCar";
 
 const Home = () => {
   return (
     <>
       <HeaderMenu />
       <PlanYou />
+      <BookCar />
       <EasyRental />
       <CarMenu />
       <Banner />
