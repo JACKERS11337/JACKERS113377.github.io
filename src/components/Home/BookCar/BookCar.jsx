@@ -98,17 +98,8 @@ const BookCar = () => {
                 value={pickTime}
               />
             </div>
-            <div className="book-drop">
-              <label htmlFor="time"> Drop-of</label>
-              <input
-                type="date"
-                id="time"
-                onChange={(e) => setDropTime(e.target.value)}
-                value={dropTime}
-              />
-            </div>
+            <button onClick={openModal}>Search</button>
           </form>
-          <button onClick={openModal}>Search</button>
         </div>
       </div>
       {/* -------------------------------------- modal------------------------------------------ */}
@@ -159,12 +150,6 @@ const BookCar = () => {
                     <h6>Pick-Up Date & Time</h6>
                     <p>
                       {pickTime} / <input type="time" />
-                    </p>
-                  </div>
-                  <div>
-                    <h6>Drop-Off Date & Time</h6>
-                    <p>
-                      {dropTime} / <input type="time" />
                     </p>
                   </div>
                   <div>
