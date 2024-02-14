@@ -1,4 +1,4 @@
-import React from "react";
+import PersonalInfo from "./PersonalInfo";
 
 const BodyModal = ({
   carImg,
@@ -95,6 +95,7 @@ const BodyModal = ({
           {!imgUrl && null}
         </div>
       </div>
+      <PersonalInfo />
     </>
   );
 };
