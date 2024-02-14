@@ -1,3 +1,5 @@
+import "./style.scss";
+
 const PersonalInfo = () => {
   return (
     <div className="booking-modal__person-info">
@@ -11,7 +13,6 @@ const PersonalInfo = () => {
             <input type="text" placeholder="Enter your first name"></input>
             <p className="error-modal">This field is required.</p>
           </span>
-
           <span>
             <label>
               Last Name <b>*</b>
@@ -77,11 +78,10 @@ const PersonalInfo = () => {
           <input type="checkbox"></input>
           <p>Please send me latest news and updates</p>
         </span>
-
-        <div className="reserve-button">
-          <button>Reserve Now</button>
-        </div>
       </form>
+      <div className="reserve-button">
+        <button>Reserve Now</button>
+      </div>
     </div>
   );
 };

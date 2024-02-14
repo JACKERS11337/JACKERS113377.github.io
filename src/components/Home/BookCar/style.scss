@@ -105,16 +105,21 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #00000070;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   .modal-content {
+    position: relative;
+    top: 20%;
+    left: 0;
     background-color: #fff;
-    width: 900px;
+    width: 800px;
     border: 2px solid #fff;
 
     .modal-title {
@@ -158,9 +163,10 @@
       }
     }
     .dialog-info {
-      padding: 10px;
+      padding: 20px;
       display: flex;
       justify-content: space-between;
+      border-bottom: 1px solid #777;
 
       .type-car {
         display: flex;
@@ -176,7 +182,7 @@
         }
 
         img {
-          width: 450px;
+          width: 420px;
           object-fit: cover;
         }
       }
@@ -194,7 +200,6 @@
       }
 
       div {
-        padding-left: 10px;
         margin-bottom: 20px;
 
         h6 {
