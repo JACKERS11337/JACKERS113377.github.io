@@ -1,0 +1,231 @@
+.book-container {
+  .book-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    padding: 50px;
+    background-image: url(/book-bg.png);
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .book-cars {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 7px;
+        }
+
+        select {
+          border: 1px solid #ccd7e6;
+          border-radius: 3px;
+          color: #ababab;
+          font-family: Rubik, sans-serif;
+          font-size: 14px;
+          outline: none;
+          padding: 10px 40px 10px 10px;
+          width: 380px;
+        }
+      }
+
+      .book-location {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 7px;
+        }
+
+        select {
+          border: 1px solid #ccd7e6;
+          border-radius: 3px;
+          color: #ababab;
+          font-family: "Poppins", sans-serif;
+          font-size: 14px;
+          outline: none;
+          padding: 10px 40px 10px 10px;
+          width: 380px;
+        }
+      }
+      .book-pick {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 7px;
+        }
+
+        input {
+          border: 1px solid #ccd7e6;
+          border-radius: 3px;
+          color: #ababab;
+          font-family: "Poppins", sans-serif;
+          font-size: 14px;
+          outline: none;
+          padding: 10px;
+          width: 380px;
+        }
+      }
+      .book-drop {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 7px;
+        }
+
+        input {
+          font-family: "Poppins", sans-serif;
+          border: 1px solid #ccd7e6;
+          border-radius: 3px;
+          color: #ababab;
+          font-size: 14px;
+          outline: none;
+          padding: 10px;
+          width: 380px;
+        }
+      }
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #ff4d30;
+      border: none;
+      box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px 100px;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal {
+  z-index: 9999999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+
+  .modal-content {
+    background-color: #fff;
+    width: 900px;
+    border: 2px solid #fff;
+
+    .modal-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #ff4d30;
+      color: #fff;
+
+      h2 {
+        font-size: 25px;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .dialog-text {
+      background-color: #ffeae6;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px 25px;
+
+      h4 {
+        color: #ff4d30;
+        font-size: 20px;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+
+      p {
+        color: #777;
+        font-weight: 500;
+        line-height: 1.6;
+        font-size: 18px;
+      }
+    }
+    .dialog-info {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .type-car {
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+          font-size: 20px;
+
+          span {
+            color: #ff4d30;
+          }
+        }
+
+        img {
+          width: 500px;
+
+          object-fit: cover;
+        }
+      }
+    }
+
+    .dialog-date {
+      display: flex;
+      flex-direction: column;
+      margin-right: 100px;
+
+      h5 {
+        color: #ff4d30;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      div {
+        padding-left: 10px;
+        margin-bottom: 20px;
+
+        h6 {
+          font-size: 16px;
+        }
+        p {
+          color: #777;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
