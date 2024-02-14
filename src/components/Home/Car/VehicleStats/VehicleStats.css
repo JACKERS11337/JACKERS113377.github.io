@@ -1,6 +1,5 @@
 .car__table {
   display: grid;
-
   font-family: "Poppins", sans-serif;
   border: 2px solid #111;
 }
@@ -20,6 +19,7 @@
   font-size: 16px;
   grid-template-columns: 280px;
   grid-template-rows: auto;
+  justify-items: center;
 }
 .car__list {
   display: grid;

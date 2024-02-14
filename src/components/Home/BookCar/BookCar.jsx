@@ -10,6 +10,17 @@ const BookCar = () => {
   const [selectLocation, setSelectLocation] = useState("");
   const [pickTime, setPickTime] = useState("");
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  function submit() {
+    setLoading(true);
+    setTimeout(() => {
+      closeModal();
+      setLoading(false);
+      const check = document.querySelector(".check-email");
+      check.style.display = "flex";
+    }, 1000);
+  }
 
   const handleCar = (e) => {
     setCarType(e.target.value);
@@ -24,6 +35,8 @@ const BookCar = () => {
 
   function closeModal() {
     document.body.style.overflow = "unset";
+    const check = document.querySelector(".check-email");
+    check.style.display = "none";
     setOpen(false);
   }
 
@@ -32,6 +45,21 @@ const BookCar = () => {
       <div className="book-container">
         <div className="book-content">
           <h2>Book a car</h2>
+          <p open={open} className="check-email">
+            Check your email to confirm an order.
+            <svg
+              onClick={closeModal}
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M18 6l-12 12"></path>
+              <path d="M6 6l12 12"></path>
+            </svg>
+          </p>
           <form>
             <div className="book-cars">
               <label htmlFor="">Select Your Car Type</label>
@@ -79,6 +107,8 @@ const BookCar = () => {
             carType={carType}
             setOpen={setOpen}
             closeModal={closeModal}
+            submit={submit}
+            loading={loading}
           />
         </Modal>
       )}

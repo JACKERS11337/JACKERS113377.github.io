@@ -1,6 +1,7 @@
+import { useState } from "react";
 import "./style.scss";
 
-const PersonalInfo = () => {
+const PersonalInfo = ({ closeModal, submit, loading }) => {
   return (
     <div className="booking-modal__person-info">
       <h4>Personal Information</h4>
@@ -80,7 +81,9 @@ const PersonalInfo = () => {
         </span>
       </form>
       <div className="reserve-button">
-        <button>Reserve Now</button>
+        <button onClick={submit}>
+          {loading ? <img src="loading.svg" alt="loading" /> : "Reserve Now"}
+        </button>
       </div>
     </div>
   );

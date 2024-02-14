@@ -6,6 +6,8 @@ const BodyModal = ({
   selectLocation,
   carType,
   closeModal,
+  submit,
+  loading,
 }) => {
   let imgUrl;
   switch (carImg) {
@@ -95,7 +97,7 @@ const BodyModal = ({
           {!imgUrl && null}
         </div>
       </div>
-      <PersonalInfo />
+      <PersonalInfo closeModal={closeModal} submit={submit} loading={loading} />
     </>
   );
 };
