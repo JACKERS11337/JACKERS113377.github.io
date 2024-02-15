@@ -15,7 +15,14 @@ const PlanYou = () => {
             <br />
             flexible pick-up options and much more.
           </p>
+          <button
+            className={style.scroll}
+            onClick={() => window.scrollTo(0, 950)}
+          >
+            Book a car
+          </button>
         </div>
+
         <div>
           <img className={style.images} src={car} alt="Golf 6" />
         </div>

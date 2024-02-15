@@ -34,11 +34,29 @@
   color: #706f7b;
   font-size: 15px;
   line-height: 1.5;
-  margin-bottom: 4rem;
+  margin-bottom: 25px;
 }
 
 .images {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.scroll {
+  align-self: flex-start;
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  padding: 20px 35px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.scroll:hover {
+  box-shadow: 0 10px 5px 0 rgba(255, 83, 48, 0.35);
 }

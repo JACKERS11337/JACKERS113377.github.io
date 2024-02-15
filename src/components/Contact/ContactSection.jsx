@@ -1,4 +1,3 @@
-import HeaderMenu from "../Header/HeaderMenu";
 import NavBackground from "../NavBackground/NavBackground";
 import { pages } from "../Js/Pages/pages";
 import AboutBannerSection from "../About/AboutBannerSection/AboutBannerSection";
@@ -8,7 +7,6 @@ import AdditionalSection from "./AdditionalSection/AdditionalSection";
 const ContactSection = () => {
   return (
     <>
-      <HeaderMenu />
       <NavBackground pages={pages[2].name} />
       <AdditionalSection />
       <AboutBannerSection />

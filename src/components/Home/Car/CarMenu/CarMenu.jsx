@@ -26,7 +26,6 @@ const CarMenu = () => {
             <Button onClick={() => carClick(adCars[4])}>
               Mercedes-Benz GLK
             </Button>
-            <Button onClick={() => carClick(adCars[5])}>Porsche 911</Button>
           </div>
           <div className={styled.models}>
             <VehicleModels car={car} />
