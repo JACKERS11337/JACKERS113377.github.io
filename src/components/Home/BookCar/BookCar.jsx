@@ -10,6 +10,8 @@ const BookCar = () => {
   const [selectLocation, setSelectLocation] = useState("");
   const [pickTime, setPickTime] = useState("");
   const [open, setOpen] = useState(false);
+  const [hasError, setHasError] = useState(false);
+
   const [loading, setLoading] = useState(false);
 
   function submit() {
@@ -25,12 +27,30 @@ const BookCar = () => {
   const handleCar = (e) => {
     setCarType(e.target.value);
     setCarImg(e.target.value);
+    setHasError(e.target.value.trim().length === 0);
   };
 
-  function openModal(event) {
-    event.preventDefault();
-    document.body.style.overflow = "hidden";
-    setOpen(true);
+  const setLocation = (e) => {
+    setSelectLocation(e.target.value);
+    setHasError(e.target.value.trim().length === 0);
+  };
+
+  const setTime = (e) => {
+    setPickTime(e.target.value);
+    setHasError(e.target.value.trim().length === 0);
+  };
+
+  function openModal(e) {
+    e.preventDefault();
+    const error = document.querySelector(".error");
+    if (carType === "" || selectLocation === "" || pickTime === "") {
+      error.style.display = "flex";
+      setOpen(false);
+    } else {
+      document.body.style.overflow = "hidden";
+      error.style.display = "none";
+      setOpen(true);
+    }
   }
 
   function closeModal() {
@@ -45,7 +65,21 @@ const BookCar = () => {
       <div className="book-container">
         <div className="book-content">
           <h2>Book a car</h2>
-          <p open={open} className="check-email">
+          <p className="error">
+            All fields required!
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path d="M18 6l-12 12"></path>
+              <path d="M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p className="check-email">
             Check your email to confirm an order.
             <svg
               onClick={closeModal}
@@ -63,7 +97,13 @@ const BookCar = () => {
           <form>
             <div className="book-cars">
               <label htmlFor="">Select Your Car Type</label>
-              <select onChange={handleCar} value={carType}>
+              <select
+                onChange={handleCar}
+                value={carType}
+                style={{
+                  border: hasError ? "1px solid red" : null,
+                }}
+              >
                 <option>Select your car type</option>
                 {cars.map((car) => (
                   <option key={car.id} value={car.mark}>
@@ -75,8 +115,11 @@ const BookCar = () => {
             <div className="book-location">
               <label htmlFor="">Location</label>
               <select
-                onChange={(e) => setSelectLocation(e.target.value)}
+                onChange={setLocation}
                 value={selectLocation}
+                style={{
+                  border: hasError ? "1px solid red" : null,
+                }}
               >
                 <option>Location</option>
                 <option value={"Minsk"}>Minsk</option>
@@ -89,11 +132,19 @@ const BookCar = () => {
               <input
                 type="date"
                 id="time"
-                onChange={(e) => setPickTime(e.target.value)}
+                onChange={setTime}
                 value={pickTime}
+                style={{
+                  border: hasError ? "1px solid red" : null,
+                }}
               />
             </div>
-            <button onClick={openModal}>Search</button>
+            <button
+              style={{ cursor: hasError ? "not-allowed" : "pointer" }}
+              onClick={openModal}
+            >
+              Search
+            </button>
           </form>
         </div>
       </div>
