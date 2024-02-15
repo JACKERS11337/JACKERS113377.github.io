@@ -10,7 +10,6 @@ const BookCar = () => {
   const [selectLocation, setSelectLocation] = useState("");
   const [pickTime, setPickTime] = useState("");
   const [open, setOpen] = useState(false);
-  const [hasError, setHasError] = useState(false);
 
   const [loading, setLoading] = useState(false);
 
@@ -27,17 +26,14 @@ const BookCar = () => {
   const handleCar = (e) => {
     setCarType(e.target.value);
     setCarImg(e.target.value);
-    setHasError(e.target.value.trim().length === 0);
   };
 
   const setLocation = (e) => {
     setSelectLocation(e.target.value);
-    setHasError(e.target.value.trim().length === 0);
   };
 
   const setTime = (e) => {
     setPickTime(e.target.value);
-    setHasError(e.target.value.trim().length === 0);
   };
 
   function openModal(e) {
@@ -97,13 +93,7 @@ const BookCar = () => {
           <form>
             <div className="book-cars">
               <label htmlFor="">Select Your Car Type</label>
-              <select
-                onChange={handleCar}
-                value={carType}
-                style={{
-                  border: hasError ? "1px solid red" : null,
-                }}
-              >
+              <select onChange={handleCar} value={carType}>
                 <option>Select your car type</option>
                 {cars.map((car) => (
                   <option key={car.id} value={car.mark}>
@@ -114,13 +104,7 @@ const BookCar = () => {
             </div>
             <div className="book-location">
               <label htmlFor="">Location</label>
-              <select
-                onChange={setLocation}
-                value={selectLocation}
-                style={{
-                  border: hasError ? "1px solid red" : null,
-                }}
-              >
+              <select onChange={setLocation} value={selectLocation}>
                 <option>Location</option>
                 <option value={"Minsk"}>Minsk</option>
                 <option value={"Vitebsk"}>Vitebsk</option>
@@ -134,17 +118,9 @@ const BookCar = () => {
                 id="time"
                 onChange={setTime}
                 value={pickTime}
-                style={{
-                  border: hasError ? "1px solid red" : null,
-                }}
               />
             </div>
-            <button
-              style={{ cursor: hasError ? "not-allowed" : "pointer" }}
-              onClick={openModal}
-            >
-              Search
-            </button>
+            <button onClick={openModal}>Search</button>
           </form>
         </div>
       </div>
